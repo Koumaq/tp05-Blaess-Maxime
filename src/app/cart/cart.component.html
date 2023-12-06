@@ -1,0 +1,5 @@
+<h2>Mon Panier</h2>
+<div *ngFor="let product of items$ | async">
+    {{ product }}
+    <button (click)="removeFromCart(product)">Supprimer</button>
+</div>
